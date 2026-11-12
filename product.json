@@ -1,0 +1,11 @@
+{
+  "front": "assets/vita500-energy-front.png",
+  "back": "",
+  "frontCrop": {
+    "x": 11,
+    "y": 21,
+    "width": 184,
+    "height": 465
+  },
+  "note": "사용자 제공 정면 원본을 사용합니다. 뒷면 원본 미제공."
+}
