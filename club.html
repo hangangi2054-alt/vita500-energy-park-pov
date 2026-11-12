@@ -1,0 +1,17 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>비타500 에너지 10대 전용 클럽</title><link rel="stylesheet" href="club.css"></head><body>
+<canvas id="club" aria-label="춤추고 충전하는 3D 에너지 클럽"></canvas>
+<header><a class="brand" href="club.html">비타500 <b>ENERGY</b><small>TEEN ENERGY CLUB</small></a><button id="sound" aria-label="음소거">♫ 소리 ON</button></header>
+<section class="intro"><span>10대 전용 에너지 클럽</span><h1>공부는 잠깐 OFF.<br><em>내 리듬은 ON.</em></h1><p>한 곡만큼 가볍게, 함께 춤춰요.</p><small id="connection" role="status">다른 방문자를 찾는 중</small><small class="demoNotice">시연 댄서 10명 · 실제 접속자 수에 포함되지 않아요.</small></section>
+<aside class="inventory"><img src="assets/vita500-energy-front.png" alt="비타500 에너지"><div>보유 캔<strong id="balance">3</strong><small id="pending"></small></div></aside>
+<div id="toast" role="status"></div><div id="status" role="status">중앙의 노란 댄스존으로 이동해 보세요.</div>
+<div id="context" hidden><button id="drink">↟ 마시기 · 1캔</button></div><button id="stop" hidden>춤 멈추기 ■</button>
+<div id="joystick" aria-label="이동 패드"><i></i></div>
+<nav aria-label="주요 행동"><button id="dance"><span>♫</span>일반 춤</button><button id="special"><span>ϟ</span>필살기</button><button id="make"><span>✦</span>에너지 만들기</button><button id="inbox"><span>✉ <b id="badge" hidden></b></span>받은 메시지</button></nav>
+<div class="help">WASD / 방향키 · 이동 패드 · 바닥 클릭 이동 · 드래그로 둘러보기</div>
+<section id="activity" hidden aria-label="갈랑가 담기 미니게임"><div class="activityHeader"><span>MAKE YOUR ENERGY</span><button id="return">← 클럽으로 돌아가기</button></div><h2>갈랑가 담아, 에너지 만들기</h2><p>방향키 또는 캔을 터치·드래그해 움직여요.</p><div class="legend"><span>🌱 갈랑가 +2</span><span>● C 카페인 −3</span></div><canvas id="game" aria-label="갈랑가와 카페인을 구분해 담는 게임"></canvas><div id="gameResult" hidden><b>에너지 만들기 완료!</b><p id="reward"></p><button id="gameReturn">클럽으로 돌아가기</button></div></section>
+<dialog id="welcome"><small>WELCOME TO TEEN ENERGY CLUB</small><h2>오늘의 스트레스,<br>리듬에 맡겨볼까?</h2><p>노란 댄스존에서 일반 춤 또는 필살기를 눌러요.<br>춤 버튼을 누르면 자체 제작 비트가 시작돼요.<br>‘시연 댄서’는 분위기를 위한 데모 캐릭터예요.<br>지치면 옆 테이블을 눌러 이동한 뒤 마시기로 충전!<br>친구 캐릭터를 누르면 에너지와 메시지를 건넬 수 있어요.</p><small>회원가입·꾸미기 없이 자동 입장 · 체험용 가상 캔 3개<br>번개·충전 효과는 캐릭터의 게임 연출입니다.</small><button id="enter">클럽 들어가기 →</button></dialog>
+<dialog id="friend"><small>A LITTLE ENERGY FOR YOU</small><h2 id="friendName"></h2><p>실제로 연결된 방문자에게만 전달돼요.</p><button id="give">에너지 건네기 · 1캔</button><button id="friendClose" class="secondary">닫기</button></dialog>
+<dialog id="giftDialog"><form id="giftForm"><small>SEND ENERGY</small><h2>한 캔에 담은 응원</h2><label for="message">짧은 메시지</label><textarea id="message" maxlength="80" required placeholder="오늘도 수고했어! 같이 춤추자."></textarea><small>최대 80자 · 가상 캔 1개를 함께 전달해요.</small><div class="actions"><button type="button" id="giftCancel" class="secondary">닫기</button><button type="submit" id="giftSend">1캔과 함께 보내기</button></div></form></dialog>
+<dialog id="messages"><small>ENERGY IN YOUR INBOX</small><h2>받은 메시지</h2><p class="storage">현재 방문 탭에 저장돼요. 새로고침해도 유지됩니다.</p><p id="empty">아직 받은 메시지가 없어요.<br>연결된 친구가 보내면 여기에 도착해요.</p><div id="messageList"></div><button id="messagesClose">닫기</button></dialog>
+<dialog id="note"><small>A NOTE FOR YOU</small><h2 id="noteFrom"></h2><p id="noteText"></p><small>함께 온 가상 에너지는 수신할 때 1캔 반영됐어요.</small><button id="noteClose">닫기</button></dialog>
+<script type="module" src="club-app.js"></script></body></html>
